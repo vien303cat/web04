@@ -8,7 +8,7 @@ $c2 = mysqli_fetch_assoc($c1);
 
 <table class="all" width="80%" border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
-    <td colspan="3" align="center" valign="middle"><input type="button" value="新增管理員" onclick="document.location.href='?do=admin&redo=admin_add'"></td>
+    <td colspan="3" align="center" valign="middle"><input type="button" value="新增管理員" onclick="document.location.href='?do=admin&redo=admin_add'"><input type="button" value="返回" onclick="document.location.href='index.php'" /></td>
   </tr>
   <tr>
     <td width="33%" align="center" valign="middle">帳號</td>

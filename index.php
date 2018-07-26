@@ -23,12 +23,12 @@
                 <a href="?do=news">最新消息</a> |
                 <a href="?do=look">購物流程</a> |
                 <a href="?do=buycart">購物車</a> |
-                                <a href="?do=login">會員登入</a> |
-                                <a href="?do=admin">管理登入</a>
+<?php if(!empty($_SESSION["consumer"])){ echo "歡迎光臨，".$_SESSION["consumer"]; }else{?><a href="?do=consumer">會員登入</a> <?php } ?> |
+                <a href="?do=admin">管理登入</a>
            </div>
         </div>
            <div style="width:100%;">
-                <marquee>情人節特惠活動 &nbsp;為了慶祝七夕情人節，將舉辦情人兩人到現場有七七折之特惠活動~</marquee></div>
+                <marquee>    &nbsp;</marquee></div>
 
         <div id="left" class="ct">
         	<div style="min-height:400px;">
@@ -36,13 +36,16 @@
                         <span>
             	<div>進站總人數</div>
                 <div style="color:#f00; font-size:28px;">
-                	00005                </div>
+                	00495                </div>
             </span>
                     </div>
         <div id="right">
+        <div style="width:100%;">
+                <marquee>情人節特惠活動 &nbsp; 年終特賣會開跑了~</marquee></div>
+        <?php include_once($web_list[$do]) ; ?>
         	        </div>
         <div id="bottom" style="line-height:70px;background:url(icon/bot.png); color:#FFF;" class="ct">
-        	頁尾版權 :        </div>
+        <?php include_once("footer.php"); ?>       </div>
     </div>
 
 </body></html>

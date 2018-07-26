@@ -45,7 +45,7 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="middle"><input type="submit" value="新增"/><input type="reset" value="重置"/></td>
+    <td colspan="2" align="center" valign="middle"><input type="submit" value="新增"/><input type="reset" value="重置"/><input type="button" value="返回" onclick="document.location.href='index.php'" /></td>
   </tr>
 </table>
 </form>

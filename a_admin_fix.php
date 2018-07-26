@@ -18,7 +18,6 @@
   if(!empty($_POST["lv5"])){ $lv5 = 1 ;}
    $sql ="update a_member set a_member_acc = '$acc' , a_member_pw = '$pw' , a_member_1 = '$lv1' , a_member_2 = '$lv2' , a_member_3 = '$lv3' , a_member_4 = '$lv4' , a_member_5 = '$lv5' where a_member_seq = '".$_GET["seq"]."';";
    mysqli_query($link,$sql);
-   echo $sql ;
    echo "<script>document.location.href='admin.php?do=admin&redo=admin'</script>";
  }
 ?>
@@ -48,7 +47,7 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="middle"><input type="submit" value="修改"/><input type="reset" value="重置"/></td>
+    <td colspan="2" align="center" valign="middle"><input type="submit" value="修改"/><input type="reset" value="重置"/><input type="button" value="返回" onclick="document.location.href='index.php'" /></td>
   </tr>
 </table>
 </form>
