@@ -17,6 +17,7 @@ if(!empty($_SESSION["user"])){
 <title>┌精品電子商務網站」</title>
 <link href="./Manage Page_files/css.css" rel="stylesheet" type="text/css">
 <script src="./Manage Page_files/js.js"></script>
+<script src="./js/jquery-1.8.3.min.js"></script>
 </head>
 
 <body>

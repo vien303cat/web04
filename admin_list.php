@@ -8,6 +8,10 @@
     $admin_list["consumer"] = "a_consumer.php";
     $admin_list["consumer_fix"] = "a_consumer_fix.php";
     $admin_list["bot"] = "bot.php";
+    $admin_list["th"] = "th.php";
+    $admin_list["th_item"] = "th_item.php";
+    $admin_list["add_item"] = "add_item.php";
+    $admin_list["update_item"] = "update_item.php";
 
     // 前台頁面
 
