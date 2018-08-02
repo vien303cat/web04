@@ -91,7 +91,7 @@ $c2 = mysqli_fetch_assoc($c1);
     <td width="70%" align="left" valign="middle" bgcolor="#FFCC00"><textarea name="introduce"  cols="45" rows="5"><?=$c2["item_3_introduce"]?></textarea></td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="middle"><input type="submit" value="修改">|<input type="reset" value="重置">|<input type="button" value="返回"></td>
+    <td colspan="2" align="center" valign="middle"><input type="submit" value="修改">|<input type="reset" value="重置">|<input type="button" onclick="document.location.href='admin.php?do=admin&redo=th_item'" value="返回"></td>
   </tr>
 </table>
 </form>

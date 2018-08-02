@@ -22,6 +22,11 @@
     $web_list["news1"]="news1.php";
     $web_list["news2"]="news2.php";
     $web_list["look"]="look.php";
+    $web_list["all"]="all_item.php";
+    $web_list["item"]="itemlist.php";
+    $web_list["data"]="itemdata.php";
+    $web_list["comebuy"]="comebuy.php";
+    $web_list["finalbuy"]="finalbuy.php";
     ////////
     if(empty($_GET["redo"])){
 	$_GET["redo"] = "admin" ;
@@ -29,7 +34,7 @@
     $redo = $_GET["redo"];
 
     if(empty($_GET["do"])){
-        $_GET["do"] = "consumer" ;
+        $_GET["do"] = "all" ;
         }
     $do = $_GET["do"];
 ?>

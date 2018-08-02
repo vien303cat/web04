@@ -4,9 +4,11 @@ if(!empty($_POST["acc"]) && !empty($_POST["pw"])){
     if($_POST["ber"] == $_SESSION["n3"]){
         $sql = "select * from a_consumer where a_consumer_acc = '".$_POST["acc"]."' and a_consumer_pw = '".$_POST["pw"]."' ;";
         $c1 = mysqli_query($link,$sql);
+        $c2 = mysqli_fetch_assoc($c1);
         $row = mysqli_num_rows($c1);
         if($row == 1){
             $_SESSION["consumer"] = $_POST["acc"];
+            $_SESSION["consumerseq"] = $c2["a_consumer_seq"];
             echo "<script>document.location.href='index.php'</script>";
         }else{
             echo "<script>alert('帳號密碼有誤');</script>";
@@ -27,7 +29,8 @@ $_SESSION["n3"] = $n3 ;
     <td colspan="2" align="center" valign="middle">第一次購物</td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="middle"><input type="button" value="按我註冊" onclick="document.location.href='index.php?do=consumer_add'" /></td>
+    <td colspan="2" align="center" valign="middle">
+        <a href='index.php?do=consumer_add'><img src="img/0413.jpg"/></a></td>
   </tr>
 <tr>
     <td colspan="2" align="center" valign="middle">會員登入</td>

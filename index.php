@@ -22,16 +22,17 @@
                 <a href="?">回首頁</a> |
                 <a href="?do=news">最新消息</a> |
                 <a href="?do=look">購物流程</a> |
-                <a href="?do=buycart">購物車</a> |
-<?php if(!empty($_SESSION["consumer"])){ echo "歡迎光臨，".$_SESSION["consumer"]; }else{?><a href="?do=consumer">會員登入</a> <?php } ?> |
+                <a href="?do=comebuy">購物車</a> |
+<?php if(!empty($_SESSION["consumer"])){  echo "歡迎光臨，".$_SESSION["consumer"]; }else{?><a href="?do=consumer">會員登入</a> <?php } ?> |
                 <a href="?do=admin">管理登入</a>
            </div>
         </div>
            <div style="width:100%;">
                 <marquee>    &nbsp;</marquee></div>
 
-        <div id="left" class="ct">
+        <div id="left" class="ct" style="overflow:auto;">
         	<div style="min-height:400px;">
+                <?php include_once("indexleft.php"); ?>
         	            </div>
                         <span>
             	<div>進站總人數</div>

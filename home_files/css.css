@@ -103,7 +103,7 @@ input[type=text],input[type=password]
 {
 	display:none;
 }
-div.ww:hover > div.s
+ww:hover > div.s
 {
 	display:block;
 }
