@@ -12,6 +12,8 @@
     $admin_list["th_item"] = "th_item.php";
     $admin_list["add_item"] = "add_item.php";
     $admin_list["update_item"] = "update_item.php";
+    $admin_list["order"] = "order.php";
+    $admin_list["orderdata"] = "orderdata.php";
 
     // 前台頁面
 
