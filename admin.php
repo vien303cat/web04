@@ -4,8 +4,8 @@
 
 <?php 
 include_once("head.php"); 
-if(!empty($_SESSION["user"])){
-	$id = $_SESSION["user"] ;
+if(!empty($_SESSION["member"])){
+	$id = $_SESSION["member"] ;
 	$sql = "select * from a_member where a_member_acc = '$id';";
 	$c1  = mysqli_query($link,$sql);
 	$c2  = mysqli_fetch_assoc($c1);
@@ -24,7 +24,7 @@ if(!empty($_SESSION["user"])){
 <iframe name="back" style="display:none;"></iframe>
 	<div id="main">
     	<div id="top">
-        	<a href="?">
+        	<a href="index.php">
             	<img src="./Manage Page_files/0416.jpg">
             </a>
                             <img src="./Manage Page_files/0417.jpg">
@@ -43,7 +43,7 @@ if(!empty($_SESSION["user"])){
         <div id="right">
 			<?php include_once($admin_list[$redo]); ?>
         	        </div>
-        <div id="bottom" style="line-height:70px; color:#FFF; background:url(icon/bot.png);" class="ct">
+        <div id="buttom" style="line-height:80px; color:#FFF; background:url(icon/bot.png);" class="ct">
         <?php include_once("footer.php"); ?> </div>
     </div>
 
