@@ -16,7 +16,7 @@
 
 <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
 <tr>
-    <td align="center" bgcolor=""><a href="/?do=all">全部商品</a></td>
+    <td align="center" bgcolor=""><a href="index.php?do=all">全部商品</a></td>
   </tr>
   <?php do{ 
       $sqll = "select * from item_2 where item_2_i1 = '".$c2["item_1_seq"]."'";
